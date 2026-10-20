@@ -1,40 +1,87 @@
 import { Link } from "react-router";
-import { siteName } from "../../data/site";
-import Brand from "../shared/Brand";
-import { emailHref, facebookHref, instagramHref } from "../../lib/contact";
+import {
+  emailHref,
+  emailLabel,
+  facebookHref,
+  instagramHref,
+  phoneHref,
+  phoneLabel,
+  whatsappLabel,
+} from "../../lib/contact";
 import { whatsappHref } from "../../lib/leads";
+import Brand from "../shared/Brand";
 import Icon from "../shared/Icon";
 import SmartLink from "../shared/SmartLink";
 
-/** Pie de página. variant "landing" conserva los enlaces ancla del diseño original. */
-export default function SiteFooter({ variant = "inner" }: { variant?: "landing" | "inner" }) {
-  const bottom = (
-    <div className="container footer-bottom"><span>© {new Date().getFullYear()} {siteName}. Todos los derechos reservados.</span><span><Link to="/politica-de-privacidad">Privacidad</Link> · <Link to="/politica-de-cookies">Cookies</Link></span></div>
+type FooterVariant = "landing" | "inner";
+
+const footerLinks = (variant: FooterVariant, href: string, label: string) =>
+  variant === "landing" && href.startsWith("#") ? (
+    <a href={href} key={label}>{label}</a>
+  ) : (
+    <SmartLink href={href} key={label}>{label}</SmartLink>
   );
 
-  if (variant === "landing") {
-    return (
-      <footer className="footer">
-        <div className="container footer-main">
-          <div><Brand /><p>Mobiliario a medida para espacios residenciales y comerciales.</p></div>
-          <div><h3>Navegación</h3><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a></div>
-          <div><h3>Servicios</h3><a href="#servicios">Cocinas</a><a href="#servicios">Closets</a><a href="#servicios">Muebles de baño</a><a href="#servicios">Mobiliario</a></div>
-          <div><h3>Contacto</h3><a href="#contacto">WhatsApp</a><a href="#contacto">Correo electrónico</a><a href="#contacto">Ubicación</a></div>
-        </div>
-        {bottom}
-      </footer>
-    );
-  }
+export default function SiteFooter({ variant = "inner" }: { variant?: FooterVariant }) {
+  const navigation = variant === "landing"
+    ? [["Inicio", "#inicio"], ["Nosotros", "#nosotros"], ["Servicios", "#servicios"], ["Proyectos", "#proyectos"]]
+    : [["Inicio", "/"], ["Nosotros", "/nosotros"], ["Servicios", "/servicios"], ["Taller", "/taller"], ["Proyectos", "/proyectos"], ["Catálogo", "/catalogo"], ["Guías", "/guias"]];
+  const services = variant === "landing"
+    ? [["Cocinas", "#servicios"], ["Closets", "#servicios"], ["Muebles de baño", "#servicios"], ["Mobiliario", "#servicios"]]
+    : [["Cocinas", "/servicios"], ["Closets", "/servicios"], ["Muebles de baño", "/servicios"], ["Mobiliario", "/servicios"]];
 
   return (
-    <footer className="footer">
+    <footer className={`footer ${variant === "landing" ? "footer-landing" : ""}`}>
       <div className="container footer-main">
-        <div><Brand /><p>Mobiliario a medida para espacios residenciales y comerciales.</p></div>
-        <div><h3>Navegación</h3><SmartLink href="/nosotros">Nosotros</SmartLink><SmartLink href="/servicios">Servicios</SmartLink><SmartLink href="/taller">Taller</SmartLink><SmartLink href="/proyectos">Proyectos</SmartLink><SmartLink href="/catalogo">Catálogo</SmartLink><SmartLink href="/guias">Guías</SmartLink></div>
-        <div><h3>Ayuda</h3><SmartLink href="/cotizacion">Solicitar cotización</SmartLink><SmartLink href="/contacto">Contacto</SmartLink><SmartLink href="/#proceso">Proceso</SmartLink><SmartLink href="/#faq">Preguntas frecuentes</SmartLink></div>
-        <div><h3>Contacto</h3><SmartLink href={whatsappHref()}>WhatsApp</SmartLink><SmartLink href={emailHref}>Correo electrónico</SmartLink><SmartLink href="/contacto#mapa">Ubicación</SmartLink><div className="footer-socials"><SmartLink href={instagramHref} aria-label="Instagram"><Icon name="instagram" /></SmartLink><SmartLink href={facebookHref} aria-label="Facebook"><Icon name="facebook" /></SmartLink></div></div>
+        <div className="footer-brand-column">
+          <Brand tone="dark" />
+          <p className="footer-brand-copy">Diseño, fabricación e instalación de muebles a medida.</p>
+          <SmartLink className="footer-quote-button" href={variant === "landing" ? "#contacto" : "/cotizacion"}>
+            Solicitar cotización <Icon name="arrow" size={17} />
+          </SmartLink>
+          <span className="footer-social-label">Síguenos</span>
+          <div className="footer-socials">
+            <SmartLink href={instagramHref} aria-label="Instagram"><Icon name="instagram" size={19} /></SmartLink>
+            <SmartLink href={facebookHref} aria-label="Facebook"><Icon name="facebook" size={19} /></SmartLink>
+          </div>
+        </div>
+
+        <nav className="footer-column" aria-label="Navegación del pie de página">
+          <h3>Navegación</h3>
+          {navigation.map(([label, href]) => footerLinks(variant, href, label))}
+        </nav>
+
+        <nav className="footer-column" aria-label="Servicios del pie de página">
+          <h3>Servicios</h3>
+          {services.map(([label, href]) => footerLinks(variant, href, label))}
+          {variant === "inner" && <SmartLink href="/cotizacion">Solicitar cotización</SmartLink>}
+        </nav>
+
+        <div className="footer-column footer-contact-column">
+          <h3>Hablemos de tu proyecto</h3>
+          <SmartLink className="footer-contact-link" href={whatsappHref()}>
+            <span className="footer-contact-icon footer-contact-icon--whatsapp"><Icon name="whatsapp" size={19} /></span>
+            <span><small>WhatsApp</small><strong>{whatsappLabel}</strong></span>
+          </SmartLink>
+          <SmartLink className="footer-contact-link" href={phoneHref}>
+            <span className="footer-contact-icon footer-contact-icon--phone"><Icon name="phone" size={18} /></span>
+            <span><small>Teléfono</small><strong>{phoneLabel}</strong></span>
+          </SmartLink>
+          <SmartLink className="footer-contact-link" href={emailHref}>
+            <span className="footer-contact-icon footer-contact-icon--gmail"><Icon name="gmail" size={20} /></span>
+            <span><small>Correo electrónico</small><strong>{emailLabel}</strong></span>
+          </SmartLink>
+          <SmartLink className="footer-contact-link" href={variant === "landing" ? "#contacto" : "/contacto#mapa"}>
+            <span className="footer-contact-icon footer-contact-icon--location"><Icon name="map" size={18} /></span>
+            <span><small>Ubicación</small><strong>Ver cobertura y mapa</strong></span>
+          </SmartLink>
+        </div>
       </div>
-      {bottom}
+
+      <div className="container footer-bottom">
+        <span>© {new Date().getFullYear()} MOZA Diseños. Todos los derechos reservados.</span>
+        <nav aria-label="Enlaces legales"><Link to="/politica-de-privacidad">Privacidad</Link><span aria-hidden="true">·</span><Link to="/politica-de-cookies">Cookies</Link></nav>
+      </div>
     </footer>
   );
 }

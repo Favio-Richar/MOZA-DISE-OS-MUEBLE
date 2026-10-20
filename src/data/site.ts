@@ -1,9 +1,9 @@
 // Datos globales del sitio. Archivo sin dependencias de Vite/React para que
 // también pueda usarlo vite.config.ts al generar sitemap y prerender SEO.
 
-export const siteName = "Forma Muebles";
+export const siteName = "MOZA Diseños";
 export const siteTagline = "Muebles a medida";
-export const siteLocale = "es";
+export const siteLocale = "es-CL";
 
 /** Dominio por defecto. Reemplázalo con VITE_SITE_URL (ver .env.example). */
 export const defaultSiteUrl = "https://tu-dominio.com";

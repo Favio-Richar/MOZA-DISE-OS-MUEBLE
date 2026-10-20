@@ -1,4 +1,4 @@
-# robots.txt — Forma Muebles
+# robots.txt — MOZA Diseños
 # Cambia el dominio de ejemplo por el real: define VITE_SITE_URL en .env y el build lo sustituye solo.
 
 User-agent: *

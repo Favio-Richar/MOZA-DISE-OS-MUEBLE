@@ -54,7 +54,7 @@ export default function ContactPage() {
 
   return (
     <PageShell>
-      <Seo title="Contacto" description="Contacta a Forma Muebles para conversar sobre cocinas, closets, muebles de baño, home office y mobiliario a medida." breadcrumbs={[["Contacto", "/contacto"]]} jsonLd={structuredData} />
+      <Seo title="Contacto" description="Contacta a MOZA Diseños para conversar sobre cocinas, closets, muebles de baño, home office y mobiliario a medida." breadcrumbs={[["Contacto", "/contacto"]]} jsonLd={structuredData} />
       <PageHero eyebrow="Contacto" title="Estamos para orientarte." copy="Elige el canal que prefieras o completa el formulario para iniciar una conversación." image={images.console} imageAlt="Recibidor contemporáneo con consola de madera" />
       <section className="contact-page section"><div className="container contact-page-grid">
         <div><SectionHeading eyebrow="Canales de atención" title="Hablemos de tu espacio" copy="Reemplaza estos contenidos editables por la información real antes de publicar." /><div className="contact-cards">{channels.map(([icon, title, copy, href]) => <SmartLink href={href} key={title}><Icon name={icon} /><span><small>{title}</small>{copy}</span></SmartLink>)}</div></div>

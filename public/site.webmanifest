@@ -1,11 +1,11 @@
 {
-  "name": "Forma Muebles",
-  "short_name": "Forma Muebles",
+  "name": "MOZA Diseños",
+  "short_name": "MOZA",
   "description": "Muebles a medida: diseño, fabricación e instalación.",
-  "lang": "es",
+  "lang": "es-CL",
   "start_url": "/",
   "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#9a5d37",
-  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "icons": [{ "src": "/img/favicom.png?v=2", "sizes": "567x794", "type": "image/png", "purpose": "any" }]
 }

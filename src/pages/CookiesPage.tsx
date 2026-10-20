@@ -13,7 +13,7 @@ export default function CookiesPage() {
 
   return (
     <PageShell>
-      <Seo title="Política de cookies" description="Conoce el almacenamiento que utiliza Forma Muebles y administra tus preferencias de privacidad." breadcrumbs={[["Política de cookies", "/politica-de-cookies"]]} />
+      <Seo title="Política de cookies" description="Conoce el almacenamiento que utiliza MOZA Diseños y administra tus preferencias de privacidad." breadcrumbs={[["Política de cookies", "/politica-de-cookies"]]} />
       <PageHero eyebrow="Información legal" title="Política de cookies" copy="Explicamos qué se guarda en tu navegador, para qué se utiliza y cómo puedes decidir sobre las tecnologías opcionales." image={images.pantry} imageAlt="Mobiliario de almacenamiento integrado en un interior moderno" />
       <div className="legal-meta"><div className="container"><span>Última actualización</span><strong>{legalUpdated}</strong><button className="button button-primary" onClick={openPreferences}>Administrar preferencias</button></div></div>
       <div className="legal-content"><div className="container legal-layout">

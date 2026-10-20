@@ -48,7 +48,7 @@ export function seoPrerender(options: { siteUrl: string }): Plugin {
       `<meta name="robots" content="index, follow, max-image-preview:large" />`,
       `<link rel="canonical" href="${url}" />`,
       `<meta property="og:site_name" content="${esc(siteName)}" />`,
-      `<meta property="og:locale" content="es_ES" />`,
+      `<meta property="og:locale" content="es_CL" />`,
       `<meta property="og:type" content="website" />`,
       `<meta property="og:title" content="${title}" />`,
       `<meta property="og:description" content="${description}" />`,

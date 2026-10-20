@@ -1,5 +1,5 @@
 /* EQUIPO */
-Empresa: Forma Muebles
+Empresa: MOZA Diseños
 Sitio: https://tu-dominio.com
 
 /* SITIO */

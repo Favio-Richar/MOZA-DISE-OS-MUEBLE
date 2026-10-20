@@ -7,6 +7,7 @@ export type IconName =
   | "clock"
   | "close"
   | "facebook"
+  | "gmail"
   | "instagram"
   | "link"
   | "mail"
@@ -23,7 +24,8 @@ export default function Icon({ name, size = 20 }: { name: IconName; size?: numbe
     chevron: <path d="m6 9 6 6 6-6" />,
     clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>,
     close: <><path d="m6 6 12 12" /><path d="M18 6 6 18" /></>,
-    facebook: <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1Z" />,
+    facebook: <path fill="currentColor" stroke="none" d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1Z" />,
+    gmail: <><path d="M3.8 7.2 12 13l8.2-5.8" stroke="#EA4335" strokeWidth="2.8" /><path d="M4 7.5V18" stroke="#4285F4" strokeWidth="2.8" /><path d="M20 7.5V18" stroke="#34A853" strokeWidth="2.8" /><path d="M4 7.3 5.8 6" stroke="#FBBC04" strokeWidth="2.8" /><path d="m18.2 6 1.8 1.3" stroke="#EA4335" strokeWidth="2.8" /><path d="M4 18h3" stroke="#4285F4" strokeWidth="2.8" /><path d="M17 18h3" stroke="#34A853" strokeWidth="2.8" /></>,
     instagram: <><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></>,
     link: <><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1" /><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" /></>,
     mail: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></>,

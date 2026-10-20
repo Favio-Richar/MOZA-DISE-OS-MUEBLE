@@ -69,7 +69,7 @@ export default function LandingPage() {
   return (
     <div className="site-shell">
       <Seo
-        title="Muebles a medida | Forma Muebles"
+        title="Muebles a medida | MOZA Diseños"
         rawTitle
         description="Diseño, fabricación e instalación de cocinas, closets, muebles de baño, home office y mobiliario personalizado."
         jsonLd={homeJsonLd(siteUrl)}
@@ -104,7 +104,7 @@ export default function LandingPage() {
               <h2>Diseñamos espacios que se sienten tuyos.</h2>
             </div>
             <div className="intro-copy">
-              <p>En <strong>Forma Muebles</strong> creamos soluciones personalizadas que integran estética, orden y funcionalidad. Cada proyecto comienza escuchando cómo vives y qué necesitas.</p>
+              <p>En <strong>MOZA Diseños</strong> creamos soluciones personalizadas que integran estética, orden y funcionalidad. Cada proyecto comienza escuchando cómo vives y qué necesitas.</p>
               <a className="text-link" href="#proceso">Conoce nuestro proceso <Icon name="arrow" size={17} /></a>
             </div>
           </Reveal>

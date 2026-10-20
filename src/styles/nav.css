@@ -45,3 +45,121 @@
 @media (prefers-reduced-motion: reduce) {
   .nav-item, .nav-sub { transition: none !important; }
 }
+
+/* ---------- Identidad y acabado del encabezado/pie ---------- */
+.header { background: #fff; border-bottom-color: rgba(49, 39, 29, .12); box-shadow: 0 5px 22px rgba(30, 24, 18, .045); }
+.nav-wrap { gap: clamp(22px, 3vw, 44px); }
+.brand { min-width: 0; }
+.brand-logo { object-fit: contain; }
+.brand-dark .brand-logo { background: transparent; border-radius: 0; }
+.brand-light .brand-logo { width: 148px; height: 78px; max-height: 78px; }
+.nav { gap: clamp(18px, 2vw, 34px); }
+.nav a { color: #3b342e; font-size: 13px; font-weight: 500; transition: color .2s ease; }
+.nav a:hover, .nav a.nav-active { color: #97713f; }
+.nav a:after { background: #b8965d; height: 2px; bottom: -9px; }
+.header-actions .button { min-height: 48px; padding-inline: 21px; border: 1px solid #302820; border-radius: 4px; background: #302820; color: #fff; box-shadow: 0 4px 12px rgba(35, 27, 19, .12); transition: background .2s, border-color .2s, box-shadow .2s, transform .2s; }
+.header-actions .button:hover { background: #4a3927; border-color: #4a3927; box-shadow: 0 7px 18px rgba(35, 27, 19, .18); transform: translateY(-1px); }
+.header-actions .button svg { color: #25d366; }
+.menu-button { border: 1px solid rgba(48, 40, 32, .2); border-radius: 4px; color: #302820; transition: background .2s, border-color .2s; }
+.menu-button:hover { background: #f7f3ec; border-color: #b8965d; }
+.nav-extra .button-primary { border-radius: 4px; background: #302820; border-color: #302820; }
+.nav-extra .button-primary:hover { background: #4a3927; border-color: #4a3927; }
+
+.footer { position: relative; padding-top: 68px; background: #201e1a; border-top: 2px solid #b8965d; }
+.footer-main { grid-template-columns: minmax(230px, 1.45fr) repeat(2, minmax(130px, .78fr)) minmax(245px, 1.2fr); gap: clamp(28px, 4vw, 64px); padding-bottom: 52px; }
+.footer-brand-column { min-width: 0; }
+.footer-brand-column .brand-logo { width: 198px; height: 98px; max-height: 98px; }
+.footer-brand-copy { max-width: 300px; margin: 18px 0 24px; color: rgba(255,255,255,.76); font-size: 13px; line-height: 1.7; }
+.footer-quote-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 46px; margin: 0 0 24px; padding: 0 17px; border: 1px solid #d6b77e; border-radius: 4px; background: #d6b77e; color: #2b241b; font-size: 12px; font-weight: 600; transition: background .2s, border-color .2s, transform .2s; }
+.footer-quote-button:hover { transform: translateY(-1px); background: #e5ca97; border-color: #e5ca97; }
+.footer-social-label { display: block; margin-bottom: 11px; color: #ddc18c; font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.footer-socials { gap: 10px; margin-top: 0; }
+.footer-main .footer-socials a { width: 44px; height: 44px; margin: 0 !important; display: grid !important; place-items: center; border: 0; border-radius: 50%; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.18); transition: transform .2s, filter .2s; }
+.footer-main .footer-socials a:hover { color: #fff; transform: translateY(-2px); filter: brightness(1.08); }
+.footer-main .footer-socials a[aria-label="Facebook"] { background: #1877f2; }
+.footer-main .footer-socials a[aria-label="Instagram"] { background: linear-gradient(135deg, #feda75 0%, #fa7e1e 28%, #d62976 58%, #962fbf 80%, #4f5bd5 100%); }
+.footer-column h3 { margin: 4px 0 21px; color: #ddc18c; font: 600 10px/1.4 var(--sans); letter-spacing: .15em; text-transform: uppercase; }
+.footer-main .footer-column > a:not(.footer-contact-link) { display: block; width: fit-content; min-height: 27px; margin: 0 0 8px; color: rgba(255,255,255,.72); font-size: 13px; transition: color .2s, transform .2s; }
+.footer-main .footer-column > a:not(.footer-contact-link):hover { color: #fff; transform: translateX(2px); }
+.footer-contact-link, .footer-main .footer-contact-link { display: flex; align-items: center; gap: 12px; min-height: 52px; margin: 0 0 10px; color: #fff; }
+.footer-contact-icon { display: grid; width: 40px; height: 40px; flex: 0 0 40px; place-items: center; border-radius: 50%; }
+.footer-contact-icon--whatsapp { color: #25d366; background: rgba(37,211,102,.14); }
+.footer-contact-icon--phone { color: #fff; background: #3b8057; }
+.footer-contact-icon--gmail { border-radius: 11px; color: #45413c; background: #fff; }
+.footer-contact-icon--location { color: #e3c38d; background: rgba(227,195,141,.14); }
+.footer-contact-link > span:last-child { display: grid; min-width: 0; gap: 3px; }
+.footer-contact-link small { color: rgba(255,255,255,.58); font-size: 10px; line-height: 1.25; }
+.footer-contact-link strong { overflow-wrap: anywhere; color: rgba(255,255,255,.94); font-size: 12px; font-weight: 500; line-height: 1.4; }
+.footer-contact-link:hover .footer-contact-icon { filter: brightness(1.15); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid rgba(255,255,255,.15); padding-block: 20px; color: rgba(255,255,255,.62); font-size: 11px; }
+.footer-bottom nav { display: flex; align-items: center; gap: 10px; }
+.footer-bottom a { color: rgba(255,255,255,.7); transition: color .2s; }
+.footer-bottom a:hover { color: #e3c38d; }
+
+/* El logo y la acción principal ganan espacio sin cubrir el contenido. */
+.header { height: 100px; }
+.inner-header + main { padding-top: 100px; }
+.hero { margin-top: 100px; }
+.brand-light .brand-logo { width: 174px; height: 95px; max-height: 95px; }
+.header-actions .button { border-color: #d6b77e; background: #d6b77e; color: #2b241b; box-shadow: 0 4px 12px rgba(35,27,19,.1); }
+.header-actions .button:hover { border-color: #e5ca97; background: #e5ca97; color: #2b241b; }
+.header-actions .button svg { color: #17613e; }
+.nav-extra .button-primary { border-color: #d6b77e; background: #d6b77e; color: #2b241b; }
+.nav-extra .button-primary:hover { border-color: #e5ca97; background: #e5ca97; color: #2b241b; }
+
+@media (max-width: 1024px) {
+  .header { height: 92px; }
+  .nav { inset: 92px 0 auto; max-height: calc(100svh - 92px); }
+  .inner-header + main { padding-top: 92px; }
+  .hero { margin-top: 92px; }
+  .brand-light .brand-logo { width: 162px; height: 88px; max-height: 88px; }
+  .footer-main { grid-template-columns: minmax(200px, 1.2fr) repeat(2, minmax(120px, .8fr)) minmax(220px, 1.2fr); gap: 28px; }
+}
+
+@media (max-width: 900px) {
+  .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 28px; }
+  .footer-main > .footer-brand-column, .footer-main > .footer-contact-column { grid-column: 1 / -1; }
+}
+
+@media (max-width: 700px) {
+  .header { height: 92px; }
+  .nav { top: 92px; max-height: calc(100svh - 92px); }
+  .inner-header + main { padding-top: 92px; }
+  .hero { height: calc(100svh - 92px); min-height: 640px; margin-top: 92px; }
+  .brand-light .brand-logo { width: 156px; height: 85px; max-height: 85px; }
+  .footer { padding-top: 50px; }
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 30px 20px; padding-bottom: 38px; }
+  .footer-main > .footer-brand-column, .footer-main > .footer-contact-column { grid-column: 1 / -1; }
+  .footer-brand-column .brand-logo { width: 184px; height: 91px; max-height: 91px; }
+  .footer-brand-copy { margin-top: 12px; }
+  .footer-contact-column { max-width: 420px; }
+  .footer-bottom { display: grid; gap: 10px; line-height: 1.6; }
+}
+
+/* Refuerzo de escala para que marca y navegación tengan más presencia. */
+.header { height: 112px; }
+.inner-header + main { padding-top: 112px; }
+.hero { margin-top: 112px; }
+.nav-wrap { gap: 28px; }
+.brand-light .brand-logo { width: 198px; height: 108px; max-height: 108px; }
+.nav { gap: clamp(16px, 1.8vw, 32px); }
+.nav a { font-size: 14px; }
+.header-actions .button { min-height: 50px; padding-inline: 24px; font-size: 14px; }
+
+@media (max-width: 1024px) {
+  .header { height: 100px; }
+  .nav { inset: 100px 0 auto; max-height: calc(100svh - 100px); }
+  .inner-header + main { padding-top: 100px; }
+  .hero { margin-top: 100px; }
+  .brand-light .brand-logo { width: 180px; height: 98px; max-height: 98px; }
+  .nav .nav-sub a { font-size: 15px; }
+  .nav .nav-extra-line { font-size: 14px; }
+}
+
+@media (max-width: 700px) {
+  .header { height: 96px; }
+  .nav { top: 96px; max-height: calc(100svh - 96px); }
+  .inner-header + main { padding-top: 96px; }
+  .hero { height: calc(100svh - 96px); margin-top: 96px; }
+  .brand-light .brand-logo { width: 172px; height: 94px; max-height: 94px; }
+}

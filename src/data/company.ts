@@ -5,9 +5,9 @@
 
 export const company = {
   /** WhatsApp en formato internacional, solo dígitos. Ej: "51987654321". Activa el chat real. */
-  whatsapp: "",
+  whatsapp: "56958800979",
   /** Teléfono para llamadas, con código de país. Ej: "+51 1 234 5678". */
-  phone: "",
+  phone: "+56 9 5880 0979",
   email: "",
   /** Dirección que se muestra y se publica en los datos estructurados de Google. */
   address: { street: "", city: "", region: "", postalCode: "", country: "" },

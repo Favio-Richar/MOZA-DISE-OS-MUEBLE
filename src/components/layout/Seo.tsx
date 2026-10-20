@@ -8,7 +8,7 @@ import { siteUrl } from "../../lib/env";
 type SeoProps = {
   title: string;
   description: string;
-  /** Usa `title` tal cual, sin agregar " | Forma Muebles". */
+  /** Usa `title` tal cual, sin agregar " | MOZA Diseños". */
   rawTitle?: boolean;
   image?: string;
   /** Páginas que no deben aparecer en buscadores (404, confirmaciones). */
@@ -55,7 +55,7 @@ export default function Seo({ title, description, rawTitle = false, image = ogIm
     upsertMeta("name", "robots", noindex ? "noindex, follow" : "index, follow, max-image-preview:large");
     upsertCanonical(url);
     upsertMeta("property", "og:site_name", siteName);
-    upsertMeta("property", "og:locale", "es_ES");
+    upsertMeta("property", "og:locale", "es_CL");
     upsertMeta("property", "og:type", "website");
     upsertMeta("property", "og:title", fullTitle);
     upsertMeta("property", "og:description", description);

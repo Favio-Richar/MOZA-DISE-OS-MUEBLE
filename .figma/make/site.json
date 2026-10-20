@@ -1,12 +1,12 @@
 {
-  "title": "Muebles a medida | Forma Muebles",
+  "title": "Muebles a medida | MOZA Diseños",
   "description": "Diseño, fabricación e instalación de cocinas, closets, muebles de baño, home office y mobiliario personalizado.",
-  "language": "es",
+  "language": "es-CL",
   "robots": {
     "index": true
   },
   "icons": {
-    "icon": "/favicon.svg"
+    "icon": "/img/favicom.png?v=2"
   },
   "openGraph": {
     "image": "https://images.unsplash.com/photo-1611005893660-34445879f48a?auto=format&fit=crop&w=1200&h=630&q=80"

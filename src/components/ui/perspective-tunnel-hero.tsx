@@ -12,7 +12,7 @@ import {
 import { ReactNode, useEffect, useRef, useState } from "react";
 
 /*
- * Perspective Tunnel Hero (adaptado a Forma Muebles)
+ * Perspective Tunnel Hero (adaptado a MOZA Diseños)
  *
  * Cambios respecto al componente original de 21st.dev:
  *  - El avance del túnel va ligado al scroll normal de la página (contenedor "sticky"),
