@@ -1,0 +1,12 @@
+import { images } from "./images";
+
+export const projectList = [
+  { slug: "cocina-referencia-01", title: "Cocina cálida integrada", category: "Cocinas", image: images.kitchenAlt, gallery: [images.kitchenAlt, images.kitchen, images.pantry, images.detail], intro: "Una referencia de cocina contemporánea donde almacenamiento, circulación y materialidad trabajan como una sola composición.", focus: "Integrar áreas de trabajo y guardado sin sobrecargar visualmente el ambiente." },
+  { slug: "closet-referencia-02", title: "Vestidor de líneas serenas", category: "Closets", image: images.closet, gallery: [images.closet, images.detail, images.console, images.pantry], intro: "Una propuesta de referencia para organizar prendas y accesorios con una lectura visual limpia.", focus: "Ordenar diferentes tipos de almacenamiento y mantener un acceso cómodo." },
+  { slug: "bano-referencia-03", title: "Baño esencial", category: "Baños", image: images.bath, gallery: [images.bath, images.detail, images.console, images.kitchenAlt], intro: "Mobiliario suspendido de referencia que libera el piso y aporta capacidad de guardado al ambiente.", focus: "Aprovechar un espacio acotado sin perder ligereza visual." },
+  { slug: "home-office-referencia-04", title: "Estudio doméstico", category: "Home office", image: images.officeAlt, gallery: [images.officeAlt, images.studio, images.detail, images.mediaUnit], intro: "Un espacio de trabajo de referencia con superficie amplia y almacenamiento integrado.", focus: "Crear una zona de concentración cómoda y coherente con el resto de la vivienda." },
+  { slug: "mueble-tv-referencia-05", title: "Muro multimedia", category: "Mobiliario", image: images.mediaUnit, gallery: [images.mediaUnit, images.console, images.detail, images.darkKitchen], intro: "Composición de referencia que reúne tecnología, exhibición y almacenamiento en un solo frente.", focus: "Resolver distintas funciones manteniendo una apariencia ordenada." },
+  { slug: "despensa-referencia-06", title: "Despensa integrada", category: "Cocinas", image: images.pantry, gallery: [images.pantry, images.kitchen, images.kitchenAlt, images.detail], intro: "Una solución de referencia para ampliar la capacidad de una cocina con módulos de piso a techo.", focus: "Facilitar el acceso cotidiano y aprovechar la altura disponible." },
+];
+
+export const projectFilters = ["Todos", "Cocinas", "Closets", "Baños", "Home office", "Mobiliario"];

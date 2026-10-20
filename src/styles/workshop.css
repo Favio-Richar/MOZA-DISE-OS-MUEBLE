@@ -1,0 +1,91 @@
+/* Páginas Taller y Guías. Se carga después de index.css. */
+
+/* ---------- Proceso de fabricación ---------- */
+.fab-steps { display: grid; gap: 90px; margin-top: 70px; }
+.fab-step { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 8%; }
+.fab-step:nth-child(even) .fab-step-image { order: 2; }
+.fab-step-image { height: 460px; overflow: hidden; background: var(--soft); }
+.fab-step-image img { height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.22, 1, .36, 1); }
+.fab-step:hover .fab-step-image img { transform: scale(1.04); }
+.fab-number { display: block; font: 300 76px/1 var(--display); color: #e1e0db; letter-spacing: -.05em; margin-bottom: 8px; }
+.fab-step-copy h3 { margin: 0 0 14px; font: 500 clamp(26px, 2.8vw, 36px)/1.15 var(--display); letter-spacing: -.035em; }
+.fab-step-copy p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; max-width: 460px; }
+
+/* ---------- Video ---------- */
+.video-section { background: var(--soft); }
+.video-embed { position: relative; aspect-ratio: 16 / 9; margin-top: 44px; background: var(--night); overflow: hidden; }
+.video-embed iframe, .video-embed button { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; }
+.video-embed button { cursor: pointer; background: none; }
+.video-embed img { height: 100%; object-fit: cover; opacity: .72; transition: opacity .3s, transform .8s; }
+.video-embed button:hover img { opacity: .55; transform: scale(1.03); }
+.video-play { position: absolute; inset: 0; margin: auto; width: 84px; height: 84px; display: grid; place-items: center; border-radius: 50%; background: var(--brand); color: var(--white); box-shadow: 0 0 0 12px rgba(154,93,55,.25); }
+.video-label { position: absolute; left: 28px; bottom: 24px; color: var(--white); font: 500 18px/1 var(--display); }
+
+/* ---------- Áreas del taller ---------- */
+.area-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 56px; }
+.area-card { position: relative; margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--night); }
+.area-card img { height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.22, 1, .36, 1); }
+.area-card:hover img { transform: scale(1.06); }
+.area-card figcaption { position: absolute; inset: auto 0 0; display: grid; gap: 4px; padding: 56px 22px 20px; color: var(--white); background: linear-gradient(0deg, rgba(15,16,14,.86), transparent); }
+.area-card strong { font: 500 19px/1.2 var(--display); }
+.area-card span { font-size: 13px; color: rgba(255,255,255,.75); }
+
+/* ---------- Materiales ---------- */
+.material-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 56px; background: var(--line); border: 1px solid var(--line); }
+.material-grid article { padding: 34px 30px; background: var(--white); }
+.material-grid h3 { margin: 0 0 10px; font: 500 20px/1.25 var(--display); letter-spacing: -.02em; }
+.material-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+/* ---------- Guías ---------- */
+.guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px 24px; }
+.guide-card { display: grid; align-content: start; gap: 10px; }
+.guide-card > div { aspect-ratio: 4 / 3; overflow: hidden; background: var(--soft); margin-bottom: 8px; }
+.guide-card img { height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.22, 1, .36, 1); }
+.guide-card:hover img { transform: scale(1.05); }
+.guide-card > span { color: var(--brand); text-transform: uppercase; letter-spacing: .12em; font-size: 10px; font-weight: 600; }
+.guide-card h2 { margin: 0; font: 500 23px/1.25 var(--display); letter-spacing: -.03em; }
+.guide-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.guide-card em { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; font-style: normal; font-size: 13px; font-weight: 600; }
+.related-title { margin: 0 0 40px; font: 500 34px/1.15 var(--display); letter-spacing: -.04em; }
+.related-guides { background: var(--soft); }
+
+/* ---------- Artículo ---------- */
+.article-body { max-width: 780px; }
+.article-body .article-lead { font-size: 21px; line-height: 1.65; color: var(--ink); margin: 0 0 40px; }
+.article-body h2 { margin: 44px 0 14px; font: 500 clamp(24px, 2.6vw, 32px)/1.2 var(--display); letter-spacing: -.03em; }
+.article-body p { color: #44463f; font-size: 17px; line-height: 1.85; margin: 0 0 16px; }
+.article-body ul { list-style: disc; margin: 0 0 18px; padding-left: 22px; color: #44463f; font-size: 16px; line-height: 1.85; }
+.article-body li::marker { color: var(--brand); }
+.article-cta { margin: 56px 0 28px; padding: 40px; background: var(--night); color: var(--white); }
+.article-cta h2 { margin: 0 0 10px; color: var(--white); }
+.article-cta p { color: rgba(255,255,255,.72); margin-bottom: 24px; }
+.article-share { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+
+/* ---------- Teasers de la landing ---------- */
+.workshop-teaser { background: var(--night); color: var(--white); }
+.teaser-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 8%; }
+.teaser-image { height: 560px; overflow: hidden; }
+.teaser-image img { height: 100%; object-fit: cover; }
+.teaser-copy h2 { margin: 18px 0 20px; font: 500 clamp(36px, 4vw, 54px)/1.12 var(--display); letter-spacing: -.045em; }
+.teaser-copy p { margin: 0 0 18px; color: rgba(255,255,255,.7); font-size: 16px; line-height: 1.8; max-width: 480px; }
+.teaser-copy ul { list-style: none; margin: 26px 0 34px; padding: 0; display: grid; gap: 12px; }
+.teaser-copy li { display: flex; align-items: center; gap: 12px; font-size: 14px; color: rgba(255,255,255,.88); }
+.teaser-copy li svg { color: #d8b49d; flex: none; }
+.guides-teaser .guide-grid { margin-top: 50px; }
+
+@media (max-width: 1024px) {
+  .guide-grid, .area-grid, .material-grid { grid-template-columns: 1fr 1fr; }
+  .teaser-grid { grid-template-columns: 1fr; gap: 40px; }
+  .teaser-image { height: 380px; }
+}
+@media (max-width: 700px) {
+  .fab-steps { gap: 60px; }
+  .fab-step { grid-template-columns: 1fr; gap: 24px; }
+  .fab-step:nth-child(even) .fab-step-image { order: initial; }
+  .fab-step-image { height: 320px; }
+  .guide-grid, .area-grid, .material-grid { grid-template-columns: 1fr; }
+  .article-body .article-lead { font-size: 18px; }
+  .article-cta { padding: 28px 22px; }
+  .article-share { flex-direction: column; align-items: flex-start; }
+  .video-play { width: 64px; height: 64px; }
+}

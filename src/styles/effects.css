@@ -1,0 +1,40 @@
+/* Efectos modernos y utilidades nuevas. Se carga DESPUÉS de index.css (diseño original de Figma),
+   por lo que solo añade o ajusta lo mínimo sin modificar ese archivo. */
+
+/* `overflow: hidden` rompía el posicionamiento "sticky" (túnel 3D); `clip` recorta igual sin crear scroll. */
+.site-shell { overflow: clip; }
+[id] { scroll-margin-top: 84px; }
+
+/* Accesibilidad: enlace para saltar la navegación */
+.skip-link { position: fixed; top: 10px; left: 10px; z-index: 100; padding: 12px 18px; background: var(--ink); color: var(--white); font-size: 13px; font-weight: 600; transform: translateY(-160%); transition: transform .2s; }
+.skip-link:focus { transform: none; }
+
+/* Barra de progreso de lectura */
+.scroll-progress { position: fixed; inset: 0 0 auto; height: 3px; z-index: 60; transform-origin: 0 50%; background: linear-gradient(90deg, var(--brand), #d8b49d); pointer-events: none; }
+
+/* Cabecera: sombra suave al hacer scroll */
+.header { transition: box-shadow .3s, background .3s; }
+.header-scrolled { box-shadow: 0 8px 30px rgba(25,26,24,.08); background: rgba(255,255,255,.99); }
+
+/* Cinta de texto (marquee) */
+.marquee { overflow: hidden; border-block: 1px solid var(--line); background: var(--white); }
+.marquee-track { display: flex; width: max-content; animation: marquee 38s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-row { display: flex; align-items: center; margin: 0; padding: 0; list-style: none; flex-shrink: 0; }
+.marquee-row li { display: flex; align-items: center; padding: 22px 0 22px 34px; font: 500 clamp(18px, 2vw, 26px)/1 var(--display); letter-spacing: -.02em; color: var(--ink); white-space: nowrap; }
+.marquee-row li i { display: block; width: 7px; height: 7px; margin-left: 34px; background: var(--brand); transform: rotate(45deg); }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* Campo trampa anti-spam: fuera de pantalla para personas */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* Zoom suave en imágenes de tarjetas y proyectos */
+.project img, .catalog-image img, .gallery-grid img { transition: transform .8s cubic-bezier(.22, 1, .36, 1); }
+.project:hover img, .catalog-item:hover .catalog-image img, .gallery-grid figure:hover img { transform: scale(1.04); }
+.gallery-grid figure { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .scroll-progress { display: none; }
+  html { scroll-behavior: auto; }
+}

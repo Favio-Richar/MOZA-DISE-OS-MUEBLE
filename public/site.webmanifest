@@ -1,0 +1,11 @@
+{
+  "name": "Forma Muebles",
+  "short_name": "Forma Muebles",
+  "description": "Muebles a medida: diseño, fabricación e instalación.",
+  "lang": "es",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#9a5d37",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

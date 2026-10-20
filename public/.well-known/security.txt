@@ -1,0 +1,6 @@
+# Canal para reportar vulnerabilidades de seguridad del sitio.
+# Reemplaza el correo y el dominio por los reales antes de publicar.
+Contact: mailto:correo@empresa.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: es
+Canonical: https://tu-dominio.com/.well-known/security.txt

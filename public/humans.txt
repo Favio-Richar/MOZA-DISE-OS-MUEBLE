@@ -1,0 +1,8 @@
+/* EQUIPO */
+Empresa: Forma Muebles
+Sitio: https://tu-dominio.com
+
+/* SITIO */
+Idioma: Español
+Tecnología: React, Vite, Tailwind CSS, Framer Motion, React Router
+Diseño: Figma

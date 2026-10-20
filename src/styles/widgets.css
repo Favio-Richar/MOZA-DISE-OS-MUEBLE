@@ -1,0 +1,46 @@
+/* Chat de WhatsApp, alertas de oferta y botón "volver arriba". Se carga después de index.css. */
+
+/* ---------- WhatsApp ---------- */
+.wa-widget { position: fixed; z-index: 70; right: 22px; bottom: 22px; display: flex; flex-direction: column; align-items: flex-end; gap: 14px; }
+.wa-widget .floating-whatsapp { position: relative; inset: auto; right: auto; bottom: auto; border: 0; cursor: pointer; font-family: inherit; }
+.wa-dot { position: absolute; top: -8px; right: -6px; min-width: 20px; height: 20px; display: grid; place-items: center; background: #d93a2b; color: #fff; font-size: 11px; border-radius: 50%; }
+.wa-card { width: min(360px, calc(100vw - 32px)); background: var(--white); box-shadow: 0 24px 70px rgba(18,19,17,.28); border: 1px solid var(--line); overflow: hidden; }
+.wa-head { display: flex; align-items: center; gap: 12px; padding: 16px 16px 16px 18px; background: var(--night); color: var(--white); }
+.wa-head div { flex: 1; display: grid; gap: 3px; }
+.wa-head strong { font: 600 15px/1 var(--display); }
+.wa-head small { font-size: 11px; color: rgba(255,255,255,.65); }
+.wa-head button { width: 34px; height: 34px; display: grid; place-items: center; border: 0; background: transparent; color: var(--white); cursor: pointer; }
+.wa-avatar { width: 40px; height: 40px; border: 2px solid var(--white); position: relative; flex: none; }
+.wa-avatar i:before, .wa-avatar i:after { content: ""; position: absolute; background: #d8b49d; }
+.wa-avatar i:before { width: 2px; height: 20px; left: 11px; top: 7px; }
+.wa-avatar i:after { width: 13px; height: 2px; left: 11px; top: 16px; }
+.wa-body { padding: 18px; display: grid; gap: 14px; background: var(--soft); }
+.wa-bubble { margin: 0; padding: 13px 15px; background: var(--white); font-size: 14px; line-height: 1.55; border-radius: 0 12px 12px 12px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+.wa-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.wa-chips button { padding: 8px 13px; border: 1px solid var(--line); background: var(--white); font-size: 12px; font-weight: 500; cursor: pointer; border-radius: 99px; transition: .2s; }
+.wa-chips button:hover { border-color: var(--brand); color: var(--brand); }
+.wa-body form { display: grid; gap: 10px; }
+.wa-body textarea { width: 100%; resize: none; padding: 12px 13px; border: 1px solid var(--line); background: var(--white); font-size: 14px; }
+.wa-send { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 0; background: #1f9d55; color: var(--white); font-size: 13px; font-weight: 600; cursor: pointer; transition: background .2s, transform .2s; }
+.wa-send:hover { background: #17824a; transform: translateY(-1px); }
+.wa-note { text-align: center; color: var(--muted); font-size: 11px; }
+
+/* ---------- Alertas de oferta ---------- */
+.promo-alert { position: fixed; z-index: 65; left: 22px; bottom: 22px; width: min(340px, calc(100vw - 100px)); padding: 22px 22px 24px; display: grid; gap: 10px; background: var(--night); color: var(--white); box-shadow: 0 24px 70px rgba(0,0,0,.35); overflow: hidden; }
+.promo-badge { justify-self: start; padding: 5px 10px; background: var(--brand); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.promo-alert strong { font: 600 19px/1.25 var(--display); letter-spacing: -.02em; padding-right: 22px; }
+.promo-alert p { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(255,255,255,.72); }
+.promo-alert small { color: #d8b49d; font-size: 11px; font-weight: 600; }
+.promo-alert .button { margin-top: 4px; min-height: 44px; }
+.promo-close { position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; display: grid; place-items: center; border: 0; background: transparent; color: rgba(255,255,255,.7); cursor: pointer; }
+.promo-close:hover { color: var(--white); }
+.promo-timer { position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: #d8b49d; transform-origin: 0 50%; animation: promo-timer linear forwards; }
+@keyframes promo-timer { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+
+@media (max-width: 700px) {
+  .wa-widget { right: 14px; bottom: 14px; }
+  .promo-alert { left: 12px; bottom: 82px; width: calc(100vw - 24px); }
+}
+@media (prefers-reduced-motion: reduce) { .promo-timer { animation: none; } }
+
+.offer-note { display: flex; align-items: center; gap: 9px; margin: 0; padding: 13px 16px; background: color-mix(in srgb, var(--brand) 10%, white); border-left: 3px solid var(--brand); font-size: 13px; }

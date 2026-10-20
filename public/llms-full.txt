@@ -1,0 +1,49 @@
+# Forma Muebles — contenido completo
+
+Sitio: https://tu-dominio.com
+Idioma: español
+Tipo de negocio: fabricación y diseño de muebles a medida (cocinas, closets, baños, home office, mobiliario personalizado).
+
+## Qué hacemos
+Diseñamos, fabricamos e instalamos mobiliario a medida para espacios residenciales y comerciales. Cada proyecto comienza escuchando cómo vive el cliente y qué necesita; las propuestas parten de sus medidas, necesidades y referencias.
+
+## Servicios
+1. Cocinas a medida — Diseño funcional adaptado al espacio, estilo y necesidades cotidianas. Islas, columnas, alacenas, despensas y módulos personalizados.
+2. Closets y vestidores — Soluciones de almacenamiento que aprovechan cada centímetro: closets empotrados, vestidores abiertos, puertas abatibles o correderas.
+3. Muebles de baño — Vanitorios suspendidos, muebles de piso, torres auxiliares y gabinetes con espejo.
+4. Home office — Escritorios murales, bibliotecas integradas, estaciones dobles y muebles multifunción.
+5. Mobiliario personalizado — Recibidores, aparadores, centros de entretenimiento, muebles auxiliares y soluciones comerciales.
+
+## Proceso de trabajo
+1. Consulta — el cliente cuenta qué espacio quiere transformar.
+2. Diseño — se define distribución, estilo y acabados.
+3. Cotización — el cliente recibe el alcance y las condiciones del proyecto.
+4. Fabricación — se produce conforme al diseño aprobado.
+5. Instalación — se coordina el montaje en el espacio.
+
+## Preguntas frecuentes
+- ¿Con qué materiales trabajan? Los materiales y acabados se definen según el uso, estilo y requerimientos de cada proyecto; durante la asesoría se presentan las opciones disponibles.
+- ¿Cómo toman las medidas? Se coordina el levantamiento de medidas según la ubicación y el alcance. También se pueden compartir medidas preliminares para iniciar la consulta.
+- ¿Cómo solicito una cotización? Completando el formulario en /cotizacion o escribiendo por WhatsApp con tipo de mueble, medidas aproximadas, ubicación y referencias visuales.
+- ¿Cuánto demora la fabricación? El plazo se informa en la cotización y depende del alcance, los materiales y la agenda de producción.
+- ¿La instalación está incluida? La cobertura y condiciones de instalación se especifican en cada cotización.
+- ¿Trabajan proyectos completos? Sí, desde una pieza puntual hasta mobiliario para varios ambientes.
+
+## Proceso de fabricación (taller propio)
+1. Diseño y planos técnicos. 2. Selección de materiales. 3. Corte y optimización. 4. Canteado y mecanizado. 5. Acabados. 6. Armado y control de calidad. 7. Entrega e instalación.
+
+## Guías
+- Cómo medir tu cocina para un mueble a medida: https://tu-dominio.com/guias/como-medir-tu-cocina-para-un-mueble-a-medida
+- Melamina, MDF o madera maciza: https://tu-dominio.com/guias/melamina-mdf-o-madera-maciza-como-elegir
+- Cómo planificar un closet a medida: https://tu-dominio.com/guias/como-planificar-un-closet-a-medida
+
+## Páginas principales
+- Taller: https://tu-dominio.com/taller
+- Guías: https://tu-dominio.com/guias
+- Inicio: https://tu-dominio.com/
+- Nosotros: https://tu-dominio.com/nosotros
+- Servicios: https://tu-dominio.com/servicios
+- Proyectos: https://tu-dominio.com/proyectos
+- Catálogo: https://tu-dominio.com/catalogo
+- Contacto: https://tu-dominio.com/contacto
+- Cotización: https://tu-dominio.com/cotizacion

@@ -1,0 +1,28 @@
+# Forma Muebles
+
+> Empresa de muebles a medida: diseño, fabricación e instalación de cocinas, closets y vestidores, muebles de baño, home office, centros de entretenimiento y mobiliario personalizado para espacios residenciales y comerciales.
+
+Todos los muebles se configuran según las medidas, el uso y el estilo de cada espacio; no se venden productos estandarizados ni hay precios cerrados. El primer paso es solicitar una cotización indicando tipo de mueble, medidas aproximadas, ubicación y referencias visuales.
+
+## Servicios
+- [Servicios de muebles a medida](https://tu-dominio.com/servicios): cocinas, closets y vestidores, muebles de baño, home office y mobiliario personalizado.
+- [Catálogo por ambientes](https://tu-dominio.com/catalogo): categorías y tipos de mueble que se pueden configurar.
+- [Taller y proceso de fabricación](https://tu-dominio.com/taller): áreas del taller y etapas de fabricación, del diseño a la instalación.
+- [Guías y consejos](https://tu-dominio.com/guias): cómo medir una cocina, elegir materiales y planificar un closet a medida.
+- [Proyectos de referencia](https://tu-dominio.com/proyectos): galería de inspiración por categoría.
+
+## Información de la empresa
+- [Nosotros](https://tu-dominio.com/nosotros): enfoque de trabajo, principios y capacidad integral (diseño, fabricación e instalación).
+- [Contacto](https://tu-dominio.com/contacto): canales de atención y formulario de consulta.
+
+## Cómo trabajar con nosotros
+- [Solicitar cotización](https://tu-dominio.com/cotizacion): formulario con datos de contacto, tipo de proyecto, medidas y archivos de referencia.
+- Proceso en cinco pasos: consulta, diseño, cotización, fabricación e instalación.
+
+## Legal
+- [Política de privacidad](https://tu-dominio.com/politica-de-privacidad)
+- [Política de cookies](https://tu-dominio.com/politica-de-cookies)
+
+## Opcional
+- [Contenido completo en texto](https://tu-dominio.com/llms-full.txt)
+- [Sitemap](https://tu-dominio.com/sitemap.xml)
